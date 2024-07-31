@@ -120,7 +120,7 @@ header {
 .navbar {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
-    height: 10vw;
+    height: 8vw;
     margin: 0px;
     display: flex;
     justify-content: space-evenly;
@@ -140,14 +140,14 @@ header {
 }
 
 .navbar h2 {
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-variation-settings: "wght" 400;
     line-height: 50px;
     transition: all .3s ease;
 }
 
 .navbar h3 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-variation-settings: "wght" 300;
     transition: all .3s ease;
 }
@@ -268,7 +268,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .logohead a {
-    width: 10vw;
+    width: 9vw;
     transition: all .3s ease;
     
 }
@@ -285,7 +285,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .buttons a {
-    font-size: 2vw;
+    font-size: 1.8vw;
     transition: all .3s ease;
     position: relative;
     background-image: linear-gradient(to right, white 33.333%, #ff36ff 66.666%, #00beff);
@@ -324,19 +324,19 @@ input[type="search"]::-webkit-search-cancel-button {
     }
 
    .smaller .logohead a {
-        width: 9vw;
+        width: 7.5vw;
     }
 
    .smaller h2 {
-        font-size: 2.4vw !important;
+        font-size: 2vw !important;
     }
 
    .smaller h3 {
-        font-size: 1.6vw !important;
+        font-size: 1.2vw !important;
     }
 
    .smaller .buttons a {
-        font-size: 1.6vw !important;
+        font-size: 1.5vw !important;
     }
 
 
@@ -587,8 +587,49 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .location {
-    width: 30%;
+    width: 25%;
+    padding: 40px 0;
     margin: auto;
+    position: relative;
+}
+
+.location:before, .location:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 5px;
+    content: '';
+    
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+.location:before
+{
+    right: 0px;
+    top: 0px;
+background: linear-gradient(to right, #ff36ff, #00beff);
+}
+
+.location:after
+{
+    left: 0px;
+    bottom: 0px;
+    background: linear-gradient(to left, #ff36ff, #00beff);
+}
+
+.location:hover:before, .location:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+.location:active:before, .location:active:after
+{
+    opacity: 1;
+    width: 100%;
 }
 
 .headingbox {
@@ -2143,10 +2184,10 @@ footer {
     }
 
     .hero {
-        height: 165vw;
+        height: 100dvh;
         background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgb(0, 0, 0, 1)), url(Images/Hero_Image.jpg);
         background-position: top;
-        background-size: 210vw;
+       
         background-repeat: no-repeat;
     }
 
@@ -2191,7 +2232,7 @@ footer {
     }
 
     .lineup {
-        height: 87vw;
+        height: 80dvh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2507,6 +2548,10 @@ footer {
         width: 60%;
         padding: 1vw 0;
         align-items: center;
+    }
+
+    .socialicons a {
+        font-size: 26px;
     }
 
     .footerlogo {
