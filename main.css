@@ -138,27 +138,27 @@ header {
 .smaller {
     height: 7vw;
 
-    .logohead {
+   
+}
+.smaller .logohead {
         padding-left: 5vw;
     }
 
-    .logohead a {
+   .smaller .logohead a {
         width: 9vw;
     }
 
-    h2 {
+   .smaller h2 {
         font-size: 2.4vw !important;
     }
 
-    h3 {
+   .smaller h3 {
         font-size: 1.6vw !important;
     }
 
-    .buttons a {
+   .smaller .buttons a {
         font-size: 1.6vw !important;
     }
-}
-
 
 
 /*----------------------------------------------*/
@@ -662,7 +662,10 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-top: 50px;
     transition: all .5s ease;
 
-    svg {
+    
+}
+
+.generaladmission svg {
 
         position: absolute;
         width: 100%;
@@ -673,7 +676,6 @@ input[type="search"]::-webkit-search-cancel-button {
         stroke-width: 5px;
 
     }
-}
 
 .generaladmission:hover {
     transform: scale(1.1);
@@ -707,7 +709,10 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-top: 50px;
     transition: all .5s ease;
 
-    svg {
+    
+}
+
+.vip svg {
 
         position: absolute;
         width: 100%;
@@ -717,8 +722,7 @@ input[type="search"]::-webkit-search-cancel-button {
         stroke-miterlimit: 10;
         stroke-width: 5px;
     }
-}
-
+    
 .vip:hover {
     transform: scale(1.1);
 }
@@ -1393,25 +1397,25 @@ footer {
     }
 }
 
-.lineup-tiles div:nth-of-type(3n-2) {
-    .artist-socials {
+.lineup-tiles div:nth-of-type(3n-2) .artist-socials {
         justify-content: center;
     }
-}
+    
 
-.lineup-tiles div:nth-of-type(3n) {
-    .headingbox {
+
+
+    .lineup-tiles div:nth-of-type(3n) .headingbox {
         margin-right: 0%;
     }
 
-    .artist-socials {
+    .lineup-tiles div:nth-of-type(3n) .artist-socials {
         float: right;
     }
 
-    p {
+    .lineup-tiles div:nth-of-type(3n) p {
         text-align: right;
     }
-}
+
 
 .artist-socials {
     margin: 2vw 0 1vw;
@@ -1499,15 +1503,15 @@ footer {
     .date {
         width: 60%;
 
-        h2 {
+       
+    }
+.date h2 {
             font-size: 4.5vw;
         }
 
-        h3 {
+       .date h3 {
             font-size: 3vw;
         }
-    }
-
     .navbar_right {
         width: 40%;
     }
@@ -1614,7 +1618,9 @@ footer {
         top: 0;
         left: 100vw;
 
-        .search {
+       
+    }
+ .sliding-nav .search {
             display: flex;
             width: 70vw;
             margin-top: 20vh;
@@ -1623,35 +1629,33 @@ footer {
 
         }
 
-        .search_box {
+        .sliding-nav .search_box {
             height: 5vh;
             min-width: 7vw;
         }
 
-        .searchbox_open {
+        .sliding-nav .searchbox_open {
             width: 70vw;
         }
 
-        .search_input {
+        .sliding-nav .search_input {
             height: 5vh;
             padding-left: 7vw;
         }
 
-        .search_input::placeholder {
+        .sliding-nav .search_input::placeholder {
             font-size: 5vw;
         }
 
-        .search input {
+        .sliding-nav .search input {
             font-size: 10vw;
             height: 5vh;
         }
 
-        .search_icon {
+        .sliding-nav .search_icon {
             width: 7vw;
             font-size: 6.5vw;
         }
-    }
-
     .sliding-nav-open {
         left: 0;
     }
@@ -1713,19 +1717,19 @@ footer {
     .timer {
         width: 80%;
 
-        h1 {
+        
+    }
+.timer h1 {
             font-size: 6vw;
         }
 
-        h2 {
+        .timer h2 {
             font-size: 14vw;
         }
 
-        h3 {
+        .timer h3 {
             font-size: 4vw;
         }
-    }
-
     .lineup {
         height: 60vw;
         display: flex;
@@ -1749,23 +1753,23 @@ footer {
         padding: 0;
     }
 
-    .shows {
-        h1 {
+   
+        .shows h1 {
             font-size: 14vw;
         }
 
-        h2 {
+        .shows h2 {
             font-size: 5vw;
         }
 
-        h3 {
+        .shows h3 {
             font-size: 3.5vw;
         }
 
-        h4 {
+        .shows h4 {
             font-size: 2.5vw;
         }
-    }
+    
 
     .prices {
         width: 90%;
@@ -1777,15 +1781,16 @@ footer {
         width: 40%;
         grid-template-rows: 40% 40%;
         border: solid white 5px;
-        p {
+       
+    }
+    .vip p {
             font-size: 3vw;
         }
 
-        h2 {
+       .vip h2 {
             font-size: 7vw;
         }
 
-    }
     .draw-me, .rectangle {
         display: none;
     }
@@ -2062,7 +2067,9 @@ footer {
         top: 0;
         left: 100vw;
 
-        .search {
+       
+    }
+.sliding-nav .search {
             display: flex;
             width: 70vw;
             margin-top: 15vh;
@@ -2071,35 +2078,33 @@ footer {
 
         }
 
-        .search_box {
+       .sliding-nav .search_box {
             height: 8vw;
             min-width: 7vw;
         }
 
-        .searchbox_open {
+       .sliding-nav .searchbox_open {
             width: 70vw;
         }
 
-        .search_input {
+       .sliding-nav .search_input {
             height: 8vw;
             padding-left: 7vw;
         }
 
-        .search_input::placeholder {
+       .sliding-nav .search_input::placeholder {
             font-size: 5vw;
         }
 
-        .search input {
+       .sliding-nav .search input {
             font-size: 10vw;
             height: 8vw;
         }
 
-        .search_icon {
+       .sliding-nav .search_icon {
             width: 7vw;
             font-size: 7vw;
         }
-    }
-
     .sliding-nav-open {
         left: 0;
     }
